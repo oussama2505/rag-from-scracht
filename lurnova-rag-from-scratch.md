@@ -464,3 +464,53 @@ response = chain.invoke({"question": question})
 print("\nQuestion:", question)
 print("\nAnswer:", response)
 ```
+
+
+
+
+
+Aquí está la guía paso a paso para instalar Python, pip y venv en Linux (Ubuntu/Debian):
+
+Primero, actualiza los repositorios:
+sudo apt update
+sudo apt upgrade
+Instala Python 3:
+sudo apt install python3
+Instala pip (el gestor de paquetes de Python):
+Instala venv (para crear entornos virtuales):
+Verifica las instalaciones:
+# Verifica la versión de Python
+python3 --version
+
+# Verifica la versión de pip
+pip3 --version
+
+# Verifica que venv está disponible
+python3 -m venv --help
+(Opcional) Si quieres hacer que python apunte a python3:
+sudo apt install python-is-python3
+Para usar estas herramientas en tu proyecto RAG:
+
+# Navega a tu directorio del proyecto
+cd rag-from-scracht
+
+# Crea un entorno virtual
+python3 -m venv venv
+
+# Activa el entorno virtual
+source venv/bin/activate
+
+
+Si necesitas desinstalar o reinstalar:
+
+# Desinstalar Python
+sudo apt remove python3
+
+# Desinstalar pip
+sudo apt remove python3-pip
+
+# Desinstalar venv
+sudo apt remove python3-venv
+
+# Eliminar configuraciones
+
